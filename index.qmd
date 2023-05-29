@@ -2,10 +2,4 @@
 title: "Exam6"
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
+![](images/%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D1%91%D0%B6.png)
