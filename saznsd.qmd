@@ -79,9 +79,15 @@ title: "Системы аутентификации и защита информ
     б) Сегментация активов - разделение сценариев работы (инструмент - сёрфинг/раб. с док./администр.)\
     в) Ограничение полномочий пользователей - только необходимые для работы привилегии
 
-17. **Защита от атак уровня приложений. Web Application Firewall.**
+17. **Защита от атак уровня приложений. Web Application Firewall.\
+    ***веб-приложения - OWASP - open worldwide application security project\
+    API - application protocol interface\
+    WAF - это протокол уровня приложений*
 
-18. **Защита от атак уровня приложений. Database Access Firewall.**
+18. **Защита от атак уровня приложений. Database Access Firewall.\
+    ***веб-приложения - OWASP - open worldwide application security project\
+    API - application protocol interface\
+    DAF - это протокол уровня приложений*
 
 19. **Понятие компрометации через цепочки поставок. Примеры.**
 
