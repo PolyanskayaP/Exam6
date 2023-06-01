@@ -89,9 +89,16 @@ title: "Системы аутентификации и защита информ
     API - application protocol interface\
     DAF - это протокол уровня приложений*
 
-19. **Понятие компрометации через цепочки поставок. Примеры.**
+19. **Понятие компрометации через цепочки поставок. Примеры.\
+    ***(? Supply Chain Attacks ??)*
 
-20. **Понятие перечня компонентов программного обеспечения (SBOM -- Software Bill of Materials). Форматы описания SBOM.**
+20. **Понятие перечня компонентов программного обеспечения (SBOM -- Software Bill of Materials). Форматы описания SBOM.\
+    **SBOM - перечень компонентов ПО\
+    Форматы:\
+    *a) SPDX (software package data eXchange)\
+    b) OWASP "Cyclone DX"\
+    c) NIST "Software Mitigations Identification (SWID) tags"\
+    ?? SCA - Software Composition Analysis - анализ компонентов ПО*
 
 21. **Мониторинг информационной безопасности. Виды источников информации для мониторинга.**
 
