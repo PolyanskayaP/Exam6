@@ -180,7 +180,8 @@ Actions on objects</em></p></li>
 <li><p><strong>Уязвимости веб-приложений. Уязвимости OWASP Top 10.</strong></p></li>
 <li><p><strong>Назначение и основные функции TIP OpenCTI.</strong></p></li>
 <li><p><strong>Назначение и основные функции Zeek.<br>
-</strong>Сбор метаинформации сетевого трафика (DNS.log, FTP.log, DHCP.log, HHTP, SSL, -файлы; сертификаты) Zeek генерирует довольно много журналов</p></li>
+</strong>Сбор метаинформации сетевого трафика (DNS.log, FTP.log, DHCP.log, HHTP, SSL, -файлы; сертификаты) Zeek генерирует довольно много журналов Zeek — это пассивный анализатор сетевого трафика с открытым исходным кодом. Многие операторы используют Zeek в качестве монитора сетевой безопасности (NSM) для расследования подозрительной или вредоносной активности. Zeek также поддерживает широкий спектр задач анализа трафика, выходящих за рамки безопасности, включая измерение производительности и устранение неполадок. проанализировать PCAP-файл:</p>
+<pre><code>zeek -r file.pcap -C</code></pre></li>
 <li><p><strong>Встроенные средства опреационной системы Linux для сбора информации о состоянии вычислительной системы.</strong></p></li>
 <li><p><strong>Защита от локального НСД. Типовые практики защиты.<br>
 </strong>а) Минимизация поверхности атаки:<br>
@@ -207,16 +208,15 @@ DAF - это протокол уровня приложений</em></p></li>
 <li><p><strong>Понятие компрометации через цепочки поставок. Примеры.<br>
 </strong><em>(? Supply Chain Attacks ??)</em></p></li>
 <li><p><strong>Понятие перечня компонентов программного обеспечения (SBOM – Software Bill of Materials). Форматы описания SBOM.<br>
-</strong>SBOM - перечень компонентов ПО<br>
-Форматы: <em>[yaml, json…?]</em><br>
-*a) SPDX (software package data eXchange)<br>
+</strong>*SBOM - перечень компонентов ПО<br>
+Форматы: [yaml, json…?]<br>
 </p>
-<ol start="2" type="a">
-<li>OWASP “Cyclone DX”<br>
-</li>
-<li>NIST “Software Mitigations Identification (SWID) tags”<br>
-?? SCA - Software Composition Analysis - анализ компонентов ПО*</li>
-</ol></li>
+<ol type="a">
+<li>SPDX (software package data eXchange)*</li>
+</ol>
+<p><em>b) OWASP “Cyclone DX”</em></p>
+<p><em>c) NIST “Software Mitigations Identification (SWID) tags”</em></p>
+<p><em>?? SCA - Software Composition Analysis - анализ компонентов ПО</em></p></li>
 <li><p><strong>Мониторинг информационной безопасности. Виды источников информации для мониторинга.<br>
 </strong><em>к</em></p></li>
 <li><p><strong>Мониторинг информационной безопасности. Средства сбора информации о сетевых событиях.<br>
