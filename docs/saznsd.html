@@ -272,18 +272,21 @@ c)Censys – новый поисковик по интернету вещей (�
 <pre><code>zeek -r file.pcap -C</code></pre></li>
 <li><p><strong>Встроенные средства опреационной системы Linux для сбора информации о состоянии вычислительной системы.</strong></p></li>
 </ol>
+<p>Версия ядра</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">uname</span> <span class="at">-r</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>4.4.0-19041-Microsoft</code></pre>
 </div>
 </div>
+<p>Все сведения о ядре</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">uname</span> <span class="at">-a</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Linux polyanskaya 4.4.0-19041-Microsoft #2311-Microsoft Tue Nov 08 17:09:00 PST 2022 x86_64 x86_64 x86_64 GNU/Linux</code></pre>
 </div>
 </div>
+<p>Используемый дистрибутив</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">lsb_release</span> <span class="at">-a</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -294,6 +297,7 @@ Release:    20.04
 Codename:   focal</code></pre>
 </div>
 </div>
+<p>Модель процессора</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> /proc/cpuinfo <span class="kw">|</span> <span class="fu">grep</span> <span class="st">"model name"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -311,14 +315,15 @@ model name  : AMD Ryzen 5 5500U with Radeon Graphics
 model name  : AMD Ryzen 5 5500U with Radeon Graphics         </code></pre>
 </div>
 </div>
+<p>Крайние 30 строк системных логов</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dmesg</span> <span class="kw">|</span> <span class="fu">tail</span> <span class="at">-n</span> 30</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[    0.037284]  Microsoft 4.4.0-19041.2311-Microsoft 4.4.35
-[    0.236356] &lt;3&gt;init: (1) ERROR: ConfigInitializeCommon:665: Failed to mount /usr/lib/wsl/drive
-[    0.236365] : 19
-[    0.236686] &lt;3&gt;init: (1) ERROR: ConfigInitializeCommon:665: Failed to mount /usr/lib/wsl/lib
-[    0.236694] 19</code></pre>
+<pre><code>[    0.032627]  Microsoft 4.4.0-19041.2311-Microsoft 4.4.35
+[    0.230631] &lt;3&gt;init: (1) ERROR: ConfigInitializeCommon:665: Failed to mount /usr/lib/wsl/drive
+[    0.230640] : 19
+[    0.230972] &lt;3&gt;init: (1) ERROR: ConfigInitializeCommon:665: Failed to mount /usr/lib/wsl/lib
+[    0.230979] 19</code></pre>
 </div>
 </div>
 <div class="cell">
