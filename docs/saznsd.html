@@ -209,9 +209,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p><strong>Понятие уязвимости проектирования, примеры. Понятие эксплойта, виды эксплойтов.</strong><br>
 Уязвимости проектирования наиболее серьезны — они обнаруживаются и уст­раняются с большим трудом. В этом случае уязвимость свойственна проекту или алгоритму и, следовательно, даже совершенная его реализация (что в принципе невозможно) не избавит от заложенной в нем слабости. Напри­мер, уязвимость стека протоколов TCP/IP. Недооценка требований по безо­пасности при создании этого стека протоколов привела к тому, что не про­ходит месяца, чтобы не было объявлено о новой уязвимости в протоколах стека TCP/IP. И раз и навсегда устранить эти недостатки уже невозможно — существуют только временные или неполные меры. Однако бывают и ис­ключения. Например, внесение в проект корпоративной сети множества модемов, облегчающих работу персонала, но существенно усложняющих работу службы безопасности. Это приводит к появлению потенциальных путей обходов межсетевого экрана, обеспечивающего защиту внутренних ресурсов от несанкционированного использования. И обнаружить, и устра­нить эту уязвимость достаточно легко.</p>
 <p>RCE - удаленное выполнение кода<br>
-LPE - локальное повышение привилегий<br>
-Sandbox Escape - результат эксплуатации уязвимостей, позволяющих из изолированной среды — песочницы — выполнить вредоносный код за ее пределами.<br>
-Эксплойты — это подвид вредоносных программ. Они содержат данные или исполняемый код, способный воспользоваться одной или несколькими <a href="https://encyclopedia.kaspersky.ru/glossary/vulnerability/?utm_source=kdaily&amp;utm_medium=blog&amp;utm_campaign=termin-explanation">уязвимостями</a> в программном обеспечении на локальном или удаленном компьютере. <a href="https://kaspersky-ru.turbopages.org/kaspersky.ru/s/blog/exploits-problem-explanation/8459/">эксплоит.касперский</a><br>
+</p>
+<p>LPE - локальное повышение привилегий<br>
+</p>
+<p>Sandbox Escape - результат эксплуатации уязвимостей, позволяющих из изолированной среды — песочницы — выполнить вредоносный код за ее пределами.<br>
+</p>
+<p>Эксплойты — это подвид вредоносных программ. Они содержат данные или исполняемый код, способный воспользоваться одной или несколькими <a href="https://encyclopedia.kaspersky.ru/glossary/vulnerability/?utm_source=kdaily&amp;utm_medium=blog&amp;utm_campaign=termin-explanation">уязвимостями</a> в программном обеспечении на локальном или удаленном компьютере. <a href="https://kaspersky-ru.turbopages.org/kaspersky.ru/s/blog/exploits-problem-explanation/8459/">эксплоит.касперский</a><br>
 Пример: Nuclear Pack &nbsp;— поражает жертв эксплойтами Java и Adobe PDF, а также подсаживает Caphaw&nbsp;— печально известный банковский <a href="https://encyclopedia.kaspersky.ru/glossary/trojan/?utm_source=kdaily&amp;utm_medium=blog&amp;utm_campaign=termin-explanation">троян</a> .</p></li>
 <li><p><strong>Понятие уязвимости реализации, примеры. Понятие эксплойта, виды эксплойтов.<br>
 </strong>Уязвимости реализации состоят в появлении ошибки на этапе реализации в программном или аппаратном обеспечении корректного с точки зрения безопасности проекта или алгоритма. Яркий пример такой уязвимости — “переполнение буфера” во многих реализациях программ, например, sendmail <a href="https://xakep.ru/2003/03/13/17872/">SENDMAIL</a> или Internet Explorer. Обнаруживаются и устраняются подобного рода уязвимости относительно легко. Если нет исходного кода программного обеспечения, в котором обна­ружена уязвимость, то ее устранение заключается или в обновлении версии уязвимого ПО или в полной его замене или отказе от него.<br>
@@ -333,11 +336,11 @@ model name  : AMD Ryzen 5 5500U with Radeon Graphics         </code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dmesg</span> <span class="kw">|</span> <span class="fu">tail</span> <span class="at">-n</span> 30</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[    0.038246]  Microsoft 4.4.0-19041.2311-Microsoft 4.4.35
-[    0.198359] &lt;3&gt;init: (1) ERROR: ConfigInitializeCommon:665: Failed to mount /usr/lib/wsl/drive
-[    0.198368] : 19
-[    0.198622] &lt;3&gt;init: (1) ERROR: ConfigInitializeCommon:665: Failed to mount /usr/lib/wsl/lib
-[    0.198629] 19</code></pre>
+<pre><code>[    0.059361]  Microsoft 4.4.0-19041.2311-Microsoft 4.4.35
+[    0.270927] &lt;3&gt;init: (1) ERROR: ConfigInitializeCommon:665: Failed to mount /usr/lib/wsl/drive
+[    0.270936] : 19
+[    0.271201] &lt;3&gt;init: (1) ERROR: ConfigInitializeCommon:665: Failed to mount /usr/lib/wsl/lib
+[    0.271207] 19</code></pre>
 </div>
 </div>
 <div class="cell">
