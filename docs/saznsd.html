@@ -333,11 +333,11 @@ model name  : AMD Ryzen 5 5500U with Radeon Graphics         </code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dmesg</span> <span class="kw">|</span> <span class="fu">tail</span> <span class="at">-n</span> 30</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[    0.037250]  Microsoft 4.4.0-19041.2311-Microsoft 4.4.35
-[    0.200631] &lt;3&gt;init: (1) ERROR: ConfigInitializeCommon:665: Failed to mount /usr/lib/wsl/drive
-[    0.200642] : 19
-[    0.201002] &lt;3&gt;init: (1) ERROR: ConfigInitializeCommon:665: Failed to mount /usr/lib/wsl/lib
-[    0.201009] 19</code></pre>
+<pre><code>[    0.038246]  Microsoft 4.4.0-19041.2311-Microsoft 4.4.35
+[    0.198359] &lt;3&gt;init: (1) ERROR: ConfigInitializeCommon:665: Failed to mount /usr/lib/wsl/drive
+[    0.198368] : 19
+[    0.198622] &lt;3&gt;init: (1) ERROR: ConfigInitializeCommon:665: Failed to mount /usr/lib/wsl/lib
+[    0.198629] 19</code></pre>
 </div>
 </div>
 <div class="cell">
@@ -397,7 +397,29 @@ OSSEC;<br>
 Tripwire;<br>
 Samhain;<br>
 Splunk.</em></p></li>
-<li><p><strong>Понятие воспроизводимых исследований и воспроизводимых отчетов. Основные программные средства обеспечения воспроизводимых исследований.</strong></p></li>
+<li><p><strong>Понятие воспроизводимых исследований и воспроизводимых отчетов. Основные программные средства обеспечения воспроизводимых исследований.<br>
+</strong>Воспроизводимые исследования - это термин, используемый в некоторых областях исследований для обозначения конкретно проведения таких анализов, что</p>
+<p>a) код преобразует необработанные данные и метаданные в обработанные данные<br>
+</p>
+<ol start="2" type="a">
+<li>код выполняет анализ данных<br>
+</li>
+<li>код включает анализы в отчет</li>
+</ol>
+<p>Когда такие данные и код используются совместно, это позволяет другим исследователям:<br>
+</p>
+<ol type="a">
+<li>выполнять анализы, о которых не сообщалось первыми исследователями<br>
+</li>
+<li>проверить правильность анализов, выполненных оригинальными исследователями<br>
+<br>
+Воспроизводимый отчет - это что-то наподобие наших отчетов в RStudio<br>
+quarto документ [lab.qmd]<br>
+или<br>
+R markdown<br>
+<br>
+</li>
+</ol></li>
 </ol>
 <section id="section" class="level2">
 <h2 class="anchored" data-anchor-id="section"></h2>
