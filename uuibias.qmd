@@ -162,7 +162,8 @@ title: "Угрозы и уязвимости ИБ ИАС"
 
 47. **Предназначение утилиты Network Miner**
 
-48. **Что такое MASSCAN?**
+48. **Что такое MASSCAN?\
+    **[MASSCAN](https://kali.tools/?p=976)
 
 49. **Примеры фильтров Wireshark**
 
