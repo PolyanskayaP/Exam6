@@ -142,13 +142,13 @@ title: "Угрозы и уязвимости ИБ ИАС"
 
     4\. Прикладной уровень (Application Layer):
 
-    \- HTTP (Hypertext Transfer Protocol)
+    \- HTTP (Hypertext Transfer Protocol) \[80\]
 
-    \- FTP (File Transfer Protocol)
+    \- FTP (File Transfer Protocol) \[20, 21\]
 
-    \- SMTP (Simple Mail Transfer Protocol)
+    \- SMTP (Simple Mail Transfer Protocol) \[25\]
 
-    \- DNS (Domain Name System)
+    \- DNS (Domain Name System) \[53 TCP, UDP\]
 
 6.  **Что такое АСУ ТП? Примеры кибератак\
     **АСУ ТП (автоматизированная система управления технологическими процессами) - это комплекс программно-технических средств, который предназначен для автоматизации управления технологическими процессами в различных отраслях промышленности. АСУ ТП позволяют контролировать и управлять различными параметрами производства, такими как температура, давление, скорость и др.
