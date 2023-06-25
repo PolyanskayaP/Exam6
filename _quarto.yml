@@ -6,8 +6,6 @@ website:
   title: "Exam6"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
       - tivkias.qmd
       - saznsd.qmd
       - uuibias.qmd
